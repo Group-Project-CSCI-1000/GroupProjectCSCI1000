@@ -29,7 +29,9 @@ export default function Home() {
           <a
             href="https://github.com/vedant29/Project-CSCI-1000"
             className="card"
-          >
+          />
+          <a href="/BryanAcevedo" className="card">
+            <h3>Bryan Acevedo's About Me Page &rarr;</h3>
             <h3>Project Resources&rarr;</h3>
             <p>
               Return to the Github for resources on creating your own website!
