@@ -1,3 +1,5 @@
+// Website URL: https://github-group-project-csci1000.netlify.app/
+
 import Head from "next/head";
 
 export default function Home() {
