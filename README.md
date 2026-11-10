@@ -1,114 +1,128 @@
+# GroupProjectCSCI1000
+
 # Welcome!
 
-## Introduction:
+## Introduction
 
+In this project, you'll form groups of 3–5 students, and each member will create a personal web page, often referred to as an "About Me" page, to share fun and interesting information about themselves. If you're uncomfortable creating a personal page, you're also welcome to choose a different topic, ensuring it complies with university guidelines.
 
-In this project, you'll form groups of 3-5 students, and each member will create a personal web page, often referred to as an "About Me" page, to share fun and interesting information about themselves. If you're uncomfortable creating a personal page, you're also welcome to choose a different topic, ensuring it complies with university guidelines. 
+The primary goal is not to build a fancy website but to get hands-on experience using Git and GitHub in a collaborative environment. You'll learn essential Git commands and gain basic skills in creating a static web page using HTML, CSS, and JavaScript.
 
-The primary goal of this project is not to build a fancy website but to get hands-on experience with using Git and GitHub in a collaborative environment. You'll learn essential Git commands used by professionals and gain basic skills in creating a static web page using HTML, CSS, and some JavaScript. 
+Your group has the freedom to decide how to style your web pages. You can use simple CSS or explore styling libraries like Styled Components, Tailwind CSS, or MUI.
 
-Your group will have the freedom to decide how to style your web pages. You can opt for simple CSS or explore other styling libraries like Styled Components, Tailwind CSS, or MUI to enhance the visual appeal.
+## University Guidelines
 
-## Please make sure that the information shared in the website is in accordance with University's policies.
+Please make sure that the information shared on the website follows university policies.
 
+## Objectives
 
-#### OBJECTIVES:
+- Develop proficiency using GitHub and collaborating in a group.
+- Practice essential Git commands, including `add`, `commit`, `status`, `branch`, `merge`, `push`, and `pull`.
+- Build a static website using HTML, CSS, and JavaScript.
 
-- Develop proficiency in using GitHub and collaborating in a group environment.
-- Acquire essential Git skills, including commands such as add, commit, status, branch, merge, push, and pull. You can refer to this [Git CheatSheet](http://git-cheatsheet.com/).
-- Build a static website by applying HTML, CSS, and JavaScript.
+## Steps to Get Started
 
-## Steps to getting this project started:
+### 1. Install Git and Node.js
 
-1. Please set up Git and npm if you haven't already. 
+Make sure Git and npm are installed. Check by running:
 
-    Check if you already have npm and node by running ```node -v``` and ```npm -v```. If not, please download npm and nodejs [HERE](https://nodejs.org/en/download/)
+```bash
+node -v
+npm -v
+```
 
-2. Each team will create a new GitHub organization. An organization will be a shared GitHub account that each team member can access.
+If needed, download Node.js from [nodejs.org](https://nodejs.org/en/download/).
 
-    Follow the directions provided in this link. Please sign up for the free personal account.
+### 2. Create a GitHub Organization
 
-         https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch
+Each team creates a GitHub organization and invites all team members.
 
-    Make sure to invite all team members to the new organization. 
+Follow the [GitHub organization setup instructions](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch).
 
-3. Create an empty public repository in the teams organization. 
+### 3. Create a Shared Repository
 
-4. One team member will clone the Next.js website template to their local computer.
+Create an empty public repository in your team's GitHub organization.
 
-    In your terminal type:
+### 4. Set Up the Project Template
 
-    ``` git clone https://github.com/vedant29/Project-CSCI-1000 ```
+One team member clones the original project template:
 
-    Then cd into the file website-template by typing:
+```bash
+git clone https://github.com/vedant29/Project-CSCI-1000.git
+cd Project-CSCI-1000
+```
 
-    ``` cd Project-CSCI-1000 ```
+Connect the project to your team's repository:
 
-    From here, you will set the git remote repository to the url generated when creating your team’s empty public repository.  
+```bash
+git remote set-url origin YOUR-GROUP-REPOSITORY-URL
+```
 
-        The url looks something like this "https://github.com/your-account/newly-created-github-repository.git"
+Verify the remote:
 
-    In your terminal type: 
+```bash
+git remote -v
+```
 
-    ``` git remote set-url origin {repository url} ``` 
+Then push the project:
 
-        It will look something like this(This url will be unique to each group):
-    ``` git remote set-url origin https://github.com/your-account/newly-created-github-repository.git ```
+```bash
+git branch -M main
+git push -u origin main
+```
 
-    Check if the remote repository has been linked
+### 5. Clone the Group Repository
 
-    ``` git remote -v ``` 
+Each team member clones the shared repository:
 
-    If you set the url correctly, you will see the origin pointing to the url:
+```bash
+git clone YOUR-GROUP-REPOSITORY-URL
+cd Project-CSCI-1000
+```
 
-    ``` origin  https://github.com/your-account/newly-created-github-repository.git (fetch) ```
-    ``` origin  https://github.com/your-account/newly-created-github-repository.git (push)  ```
-    
-    Next type these two commands:
+Install the project dependencies:
 
-    ``` git branch -M main ```
-    ``` git push -u origin main ```
+```bash
+npm install
+```
 
-    Now you should see the newly cloned project in the organization's repository. 
+For help installing npm, visit the [npm installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-5. Each team member will clone the organization project repository to thier local computer.   
+### 6. Run the Website Locally
 
-    ``` git clone https://github.com/your-account/newly-created-github-repository.git ```
+Start the development server:
 
-    cd into project folder:
-    
-    ``` cd Project-CSCI-1000 ```
+```bash
+npm run dev
+```
 
-    Next, we want to install all the project dependencies by typing:
-    
-    ``` npm install ```
-    
-        If you dont have npm installed on your computer. Check out this website for instructions: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-6. Now, you are ready to start working on the project.
+### 7. Deploy the Website Using Netlify
 
-    to host your website locally type this command:
+1. Create a Netlify account or log in.
+2. Select **New site from Git**.
+3. Connect your GitHub account.
+4. Select your group's repository.
+5. Configure the build settings.
+6. Click **Deploy**.
+7. Once deployed, copy the generated website URL and add it to the appropriate comment in `index.js`, as instructed by the project directions.
 
-    ``` npm run dev ```
+## Git Collaboration
 
-    checkout http://localhost:3000 in your browser.
+Always run `git pull` before starting a new feature so you have the latest project changes.
 
-7. Now you all need to host your website on a platform. This can be done using Netlify. To host the website using Netlify's free version:
+After making changes, use:
 
-    Create a Netlify account or log in if you already have one.
+```bash
+git status
+git add .
+git commit -m "Describe your changes"
+git push
+```
 
-    Click on "New site from Git" in your Netlify dashboard.
-`
-    Connect your GitHub account to Netlify.
+If merge conflicts occur, communicate with your teammates and resolve them together.
 
-    Choose the repository that contains your project. Switch to the organizations that you are a part of for this project.
+## Git Cheat Sheet
 
-    Configure the build settings (you can leave the default settings for a simple project).
-
-    Click "Deploy" to build and deploy your website.
-
-    Once the deployment is complete, your site will be live and accessible via a Netlify-generated URL.
-
-    Please paste the link of your Netlify-generated URL in the comments of your <code> index.js </code> file.
-
-Disclaimer -- Please make sure to collaborate with your team and always run git pull before working on a new feature. git pull will help ensure that you are working on the most updated code base of your project and help prevent merge errors in the future.
+For additional help, refer to the [Git Cheat Sheet](https://git-cheatsheet.com/).
