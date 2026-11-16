@@ -15,7 +15,8 @@ export default function examplePage() {
         />
 
         <p className="description">
-          Hey, my name is Sergiy! I completed this part of the assignment!
+          Hey, my name is Sergiy! I am a Computer Science BS major at CU
+          Boulder.
         </p>
 
         <a className="button" href="/">
