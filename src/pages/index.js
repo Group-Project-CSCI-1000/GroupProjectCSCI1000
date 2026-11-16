@@ -24,7 +24,7 @@ export default function Home() {
         <code>src/page/teamMemberName.js</code> */}
 
         <div className="grid">
-          <a href="/SergiyKozmyn" className="card">
+          <a href="/sergiykozmyn" className="card">
             <h3>Sergiy Kozmyn's About Me Page &rarr;</h3>
             <p>Click here to navigate to my About Me Page</p>
           </a>
