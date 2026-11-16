@@ -8,11 +8,7 @@ export default function examplePage() {
         <div className="underline">
           <h1 className="title">Hey, I'm Sergiy Kozmyn. </h1>
         </div>
-        <img
-          className="pic"
-          src="https://i.postimg.cc/htvRSLYt/sergiy-Image.jpg"
-          alt="sergiy kozmyn"
-        />
+        <img className="pic" src="/sergiyImage.jpeg" alt="sergiy kozmyn" />
 
         <p className="description">
           Hey, my name is Sergiy! I am a Computer Science BS major at CU
